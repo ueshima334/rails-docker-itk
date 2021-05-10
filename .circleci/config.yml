@@ -74,4 +74,4 @@ workflows: #手順
             - test
           filters: #mainのブランチにマージされた時にだけdeployのjobを実行する
             branches:
-              only:main
+              only: main
