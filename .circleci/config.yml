@@ -60,7 +60,7 @@ jobs:
           command: heroku run bundle exec rake db:migrate RAILS_ENV=production -a $HEROKU_APP_NAME
 
 
-          
+
 workflows: #手順
   version: 2
   build_test_and_deploy:
