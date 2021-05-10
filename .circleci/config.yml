@@ -28,7 +28,7 @@ jobs:
     working_directory: ~/rails-docker-itk/src
     steps:
       - checkout:
-          path: ~/rails-docker-kyt
+          path: ~/rails-docker-itk
       - ruby/install-deps
       - run:
           name: Database setup
@@ -36,6 +36,7 @@ jobs:
       - run:
           name: test
           command: bundle exec rake test
+          
 
 workflows: #手順
   version: 2
